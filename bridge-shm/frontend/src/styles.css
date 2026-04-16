@@ -1,0 +1,43 @@
+:root {
+  --bg-main: #0d1117;
+  --bg-panel: #161b22;
+  --line-soft: #30363d;
+  --text-main: #e6edf3;
+  --text-dim: #9da7b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(46, 160, 67, 0.12), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(210, 153, 34, 0.12), transparent 26%),
+    linear-gradient(145deg, #0a0f15 0%, var(--bg-main) 45%, #0f141c 100%);
+  color: var(--text-main);
+}
+
+.card {
+  background: linear-gradient(160deg, rgba(22, 27, 34, 0.97), rgba(16, 20, 25, 0.98));
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.fade-in {
+  animation: fadeInUp 420ms ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
